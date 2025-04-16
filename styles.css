@@ -811,3 +811,21 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    padding: 0;
+    list-style: none;
+}
+
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+}
