@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Pneus Normaux - Entreprise virtuelle TrucksBook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="loading-screen">
+        <div class="loading-content">
+            <img src="img/loading.gif" class="loading-logo">
+        </div>
+    </div>
+    <!-- Header -->
+    <header class="sticky-header">
+        <nav>
+            <div class="logo">
+                <a href="#" class="logo-link">
+                    <img src="img/logo.png" alt="Logo LPN" class="logo-img">
+                </a>
+            </div>
+            <ul>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contrats">Contrats</a></li>
+                <li><a href="#employes">Nos Employés</a></li>
+                <li><a href="#tracker">LPNTracker</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" style="background-image: url(img/hero-bg.png);">
+        <div class="hero-content">
+            <h1>Les Pneus Normaux</h1>
+            <h3>La société franco-réunionnaise qui livre d'un point A à un point B !</p>
+            <a href="#" class="cta-button">Postulez</a>
+        </div>
+    </section>
+
+    <!-- À Propos -->
+    <section class="about">
+        <div class="container">
+            <h2>Notre Histoire</h2>
+            <p>Une belle journée d'août 2019, je découvre un site qui permet de tracker son
+                activité de transport routier virtuel. Je me dis que c'est une bonne idée, mais je ne
+                suis pas sûr de vouloir le faire tout seul. Alors, je me dis que je vais créer une
+                société de transport routier virtuel. J'invite donc des copains à me suivre, et c'est
+                ainsi que naît Les Pneus Normaux.</p>
+            <p>À la toute base, l'objectif c'était de livrer le plus vite possible la livraison, en
+                jouant dans le classement en mode Course. Mais on s'est rendu compte que la plupart
+                des joueurs sur TrucksBook ne jouent pas en mode Course, mais en mode Réel. Et c'est
+                ainsi que nous avons radicalement changé de bord (pas polique attention, oh, hehe !).</p>
+        </div>
+    </section>
+
+    <!-- Savoir-faire -->
+    <section class="expertise">
+        <div class="container">
+            <h2>Notre Savoir-Faire</h2>
+            <div class="expertise-content">
+                <div class="expertise-grid">
+                    <div class="expertise-card">
+                        <h3>100% de livraison</h3>
+                        <p>Nos marchandises sont TOUTES livrées, après l'état, allez savoir tiens !</p>
+                    </div>
+                    <div class="expertise-card">
+                        <h3>0% de satisfaction</h3>
+                        <p>Alors qu'on livre à nos clients en un temps record, ils sont cons ou quoi ???</p>
+                    </div>
+                    <div class="expertise-card">
+                        <h3>100% fun garanti</h3>
+                        <p>Si vous saviez les barres de rires que nous avons entre employés ! Un délire !</p>
+                    </div>
+                </div>
+                <div class="expertise-image">
+                    <img src="img/expertise.jpg" alt="Notre expertise">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Le directeur-->
+    <section class="director">
+        <div class="container">
+            <h2>Le Directeur</h2>
+            <div class="director-content">
+                <div class="director-image">
+                    <img src="img/directeur.jpeg" alt="Byoo_, le directeur">
+                </div>
+                <div class="director-text">
+                    <p><i>Salut, moi c'est Byoo_, CEO, PDG, Président, Docteur, Colonel de mon entreprise, là. 
+                        Passionné par ETS2 depuis 2013, j'ai appris plein de trucs, mais je ne suis pas un pro, attention !
+                        Je suis là pour recruter des gens, les faire rouler et rigoler un MAX ! #humour
+                        Note : je déteste le RP.</i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vidéo -->
+    <section class="video-section">
+        <div class="container">
+            <h2>Toujours pas convaincu ?</h2>
+            <p>Regardez cette vidéo YouTube qui vous dira exactement la même chose que le reste du site !</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ynYDpInt15g" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistiques -->
+    <section class="stats">
+        <div class="container">
+            <h2>Nos Statistiques</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <span class="stat-number" data-target="2900000">0</span>
+                    <span class="stat-unit">km</span>
+                    <p>parcourus</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="20">0</span>
+                    <p>employés non payés</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="3200">0</span>
+                    <p>livraisons réalisées</p>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number" data-target="13400000">0</span>
+                    <span class="stat-unit">€</span>
+                    <p>d'amendes impayées</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="page-section hidden">
+        <div class="container">
+            <h2 style="text-align: center;">Galerie</h2>
+            <p>Voici quelques captures d'écran et vidéos de nos livraisons !</p>
+            
+            <!-- Section Images -->
+            <div class="gallery-section">
+                <h3>Captures d'écran</h3>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/gallery/1.png" alt="Capture 1" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gallery/2.jpg" alt="Capture 2" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gallery/3.png" alt="Capture 3" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gallery/4.png" alt="Capture 4" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gallery/5.png" alt="Capture 5" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gallery/6.jpg" alt="Capture 6" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gallery/7.png" alt="Capture 7" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gallery/8.png" alt="Capture 8" class="gallery-img">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/gallery/9.jpg" alt="Capture 9" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Vidéos -->
+            <div class="gallery-section">
+                <h3>Clips & Vidéos</h3>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=ScaryHealthyDolphinPunchTrees-O133IyDiqEFUucWF" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <video controls>
+                            <source src="vids/clip1.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=AdorableSparklyWolverineDancingBanana-kyq50vbL0MmzQ3KJ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=InexpensiveDaintyTroutLeeroyJenkins-C2T8kN0PM9SYC-FK" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=BlatantSullenLorisSquadGoals-cgdTVEcjZmsKS9FJ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=SpotlessAssiduousApeTinyFace-EEAqcVo85Y0QXDUv" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=LovelySnappyFriseeBrainSlug-ge6_cgfKLVOm99VG" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=RelievedAlertMacaroniPermaSmug-M1iGIMoMvIm6BwUh" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=TangentialTameFungusPeteZaroll-nZvgrziQ5LsvGRCo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=AuspiciousResoluteMooseBuddhaBar-WpTig2l86mxoodVr" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe src="https://clips.twitch.tv/embed?clip=CarelessTameBasenji4Head-wFB6GK0K3HUJ7x9A" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Modal pour l'agrandissement des images -->
+            <div id="imageModal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modalImg">
+            </div>
+
+            <a href="#" class="back-button">Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <section id="contrats" class="page-section hidden">
+        <div class="container">
+            <h2>Nos Contrats</h2>
+            <div class="contract-intro">
+                <p>Chez Les Pneus Normaux, nous pensons que chaque employé mérite un contrat adapté à ses besoins et à son engagement. 
+                    C'est pourquoi nous proposons deux types de contrats : le Contrat Chauffeur et le Contrat Renforceur. 
+                    Vous souhaitez vous investir pleinement pour l'entreprise et conduire selon vos envies ? Prenez le contrat de Chauffeur. 
+                    Vous souhaitez vous investir qu'un lapse de temps court mais intense ? Prenez le contrat Renforceur. </p>
+                </p>
+            </div>
+            <div class="contracts-grid">
+                <div class="contract-card">
+                    <h3>Contrat Chauffeur</h3>
+                    <ul class="contract-list">
+                        <li>Contrat à durée indéterminée*</li>
+                        <li>Accès au Discord de l'entreprise</li>
+                        <li>Soumis au LPNTracker™</li>
+                        <li>Participation aux événements non obligatoire</li>
+                    </ul>
+                </div>
+                
+                <div class="contract-card">
+                    <h3>Contrat Renforceur</h3>
+                    <ul class="contract-list">
+                        <li>Contrat de 1 à 3 mois au choix</li>
+                        <li>Accès au Discord de l'entreprise</li>
+                        <li>Participation aux événements recommandée</li>
+                        <li>Possibilité d'évolution vers le statut Chauffeur</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contract-footer">
+                <p>Selon le choix de votre contrat, merci de le préciser dans le formulaire d'inscription sur TrucksBook.</p>
+                <a href="#" class="cta-button">Postuler maintenant</a>
+            </div>
+            <a href="#" class="back-button">Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <section id="employes" class="page-section hidden">
+        <div class="container">
+            <h2>Nos Employés</h2>
+            <div class="employee-carousel">
+                <button class="carousel-btn prev-btn">&lt;</button>
+                <div class="employee-cards">
+                    <div class="employee-card" data-color="#FFB347">
+                        <div class="card-header">
+                            <img src="img/employees/byoo.png" alt="Byoo_" class="employee-img">
+                            <h3>Byoo_</h3>
+                            <span class="role">PDG & Fondateur</span>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span class="stat-label">Camion préféré</span>
+                                <span class="stat-value">Volvo FH6</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Livraisons</span>
+                                <span class="stat-value">334</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Km parcourus</span>
+                                <span class="stat-value">536,237</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p>"c'est le mec qui bouffe le cul d'un pute..."</p>
+                            <span class="join-date">Rejoint le: 02/08/2019</span>
+                        </div>
+                    </div>
+                    <div class="employee-card" data-color="#FFB347">
+                        <div class="card-header">
+                            <img src="img/employees/jerem.png" alt="Jerem974" class="employee-img">
+                            <h3>Jerem974</h3>
+                            <span class="role">Chauffeur</span>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span class="stat-label">Camion préféré</span>
+                                <span class="stat-value">Mercedes New Actros</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Livraisons</span>
+                                <span class="stat-value">145</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Km parcourus</span>
+                                <span class="stat-value">180,577</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p>"J'ai 3 jours restants"</p>
+                            <span class="join-date">Rejoint le: 03/08/2019</span>
+                        </div>
+                    </div>
+                    <div class="employee-card" data-color="#FFB347">
+                        <div class="card-header">
+                            <img src="img/employees/sacresula.png" alt="Sacresula" class="employee-img">
+                            <h3>Sacresula</h3>
+                            <span class="role">Chauffeur</span>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span class="stat-label">Camion préféré</span>
+                                <span class="stat-value">DAF 2021 XG+</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Livraisons</span>
+                                <span class="stat-value">433</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Km parcourus</span>
+                                <span class="stat-value">398,403</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p>"Fuck ProMods"</p>
+                            <span class="join-date">Rejoint le: 16/06/2022</span>
+                        </div>
+                    </div>
+                    <div class="employee-card" data-color="#FFB347">
+                        <div class="card-header">
+                            <img src="img/employees/dess.png" alt="Dess" class="employee-img">
+                            <h3>Dess</h3>
+                            <span class="role">Chauffeur</span>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span class="stat-label">Camion préféré</span>
+                                <span class="stat-value">Volvo FH4</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Livraisons</span>
+                                <span class="stat-value">452</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Km parcourus</span>
+                                <span class="stat-value">267,402</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p>"Je drift mieux en vrai Kappa"</p>
+                            <span class="join-date">Rejoint le: 07/08/2022</span>
+                        </div>
+                    </div>
+                    <div class="employee-card" data-color="#FFB347">
+                        <div class="card-header">
+                            <img src="img/employees/shiri.png" alt="shiri" class="employee-img">
+                            <h3>Shiri</h3>
+                            <span class="role">Chauffeur</span>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span class="stat-label">Camion préféré</span>
+                                <span class="stat-value">Scania S</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Livraisons</span>
+                                <span class="stat-value">147</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Km parcourus</span>
+                                <span class="stat-value">236,726</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p>""</p>
+                            <span class="join-date">Rejoint le: 23/04/2023</span>
+                        </div>
+                    </div>
+                    <div class="employee-card" data-color="#FFB347">
+                        <div class="card-header">
+                            <img src="img/employees/alto.png" alt="-Alto-" class="employee-img">
+                            <h3>-Alto-</h3>
+                            <span class="role">Chauffeur</span>
+                        </div>
+                        <div class="card-stats">
+                            <div class="stat-row">
+                                <span class="stat-label">Camion préféré</span>
+                                <span class="stat-value">Scania Streamline</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Livraisons</span>
+                                <span class="stat-value">134</span>
+                            </div>
+                            <div class="stat-row">
+                                <span class="stat-label">Km parcourus</span>
+                                <span class="stat-value">146,595</span>
+                            </div>
+                        </div>
+                        <div class="card-description">
+                            <p>""</p>
+                            <span class="join-date">Rejoint le: 16/06/2022</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-btn next-btn">&gt;</button>
+            </div>
+            <a href="#" class="back-button">Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <section id="tracker" class="page-section hidden">
+        <div class="container">
+            <h2>LPNTracker™</h2>
+            <div class="tracker-content">
+                <div class="tracker-description">
+                    <h3>Qu'est-ce que le LPNTracker™ ?</h3>
+                    <p>Le LPNTracker™ est notre logiciel maison qui permet de suivre l'activité de nos chauffeurs. 
+                       Développé spécifiquement pour Les Pneus Normaux, il offre plusieurs fonctionnalités :</p>
+                    
+                    <ul class="tracker-features">
+                        <li>Suivi en temps réel des kilomètres parcourus</li>
+                        <li>Calcul automatique des jours bonus</li>
+                        <li>Historique complet des livraisons</li>
+                        <li>On se croirait dans le célèbre roman de G. Orwell</li>
+                    </ul>
+
+                    <div class="bonus-system">
+                        <h4>La Formule v1.0</h4>
+                        <p>Plus vous roulez dans le mois, plus vous gagnez des jours !</p>
+                        <ul>
+                            <li>Vous avez roulez 500 km dans le mois, vous gagnez 30 jours.</li>
+                            <li>Vous avez roulez 2500 km dans le mois, vous gagnez de nouveau 30 jours.</li>
+                            <li>Vous avez roulez 10000 km dans le mois, vous gagnez 60 jours.</li>
+                            <li>Vous avez roulez 25000 km dans le mois, vous gagnez 90 jours.</li>
+                            <li>Vous avez roulez 35000 km dans le mois, vous gagnez 120 jours.</li>
+                            <li>Vous avez roulez 50000 km dans le mois, vous gagnez 150 jours.</li>
+                            <li>Vous avez roulez 100000 km dans le mois, vous gagnez 180 jours.</li>
+                            <p><i>Selon votre nombre de jours restants, si il est au-dessus de 180 jours, les gains sont divisés par deux.</i></p>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tracker-image">
+                    <img src="img/lpntracker.png" alt="Interface du LPNTracker">
+                    <span class="image-caption">Interface du LPNTracker™</span>
+                </div>
+            </div>
+            <a href="#" class="back-button">Retour à l'accueil</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="img/logo.png" alt="Logo LPN">
+                    <p class="slogan">La livraison d'abord, le reste après.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Nos Réseaux</h3>
+                    <ul>
+                        <li><a href="#">Discord</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">TrucksBook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
