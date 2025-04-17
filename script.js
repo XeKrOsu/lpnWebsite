@@ -137,6 +137,65 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn?.addEventListener('click', () => {
         carousel.scrollLeft -= cardWidth;
     });
+
+    // Menu mobile
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('.nav-menu');
+
+    mobileMenuBtn?.addEventListener('click', () => {
+        mobileMenuBtn.classList.toggle('active');
+        navMenu.classList.toggle('active');
+        document.body.classList.toggle('menu-open');
+    });
+
+    // Fermer le menu au clic à l'extérieur
+    document.addEventListener('click', (e) => {
+        if (navMenu.classList.contains('active') && 
+            !e.target.closest('.nav-menu') && 
+            !e.target.closest('.mobile-menu-btn')) {
+            mobileMenuBtn.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+    });
+
+    // Fermer le menu au clic sur un lien
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        });
+    });
+
+    // Ajuster la hauteur des iframes vidéo
+    function resizeVideoIframes() {
+        const videoItems = document.querySelectorAll('.video-item');
+        videoItems.forEach(item => {
+            const width = item.offsetWidth;
+            item.style.height = `${width * 0.5625}px`; // Ratio 16:9
+        });
+    }
+
+    window.addEventListener('resize', resizeVideoIframes);
+    resizeVideoIframes();
+
+    // Gestion du header transparent
+    const header = document.querySelector('.sticky-header');
+    const threshold = 100; // Distance de défilement avant changement
+
+    function updateHeader() {
+        if (window.pageYOffset > threshold) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    }
+
+    // Appliquer au chargement
+    updateHeader();
+
+    // Écouter le défilement
+    window.addEventListener('scroll', updateHeader);
 });
 
 function animateStats() {
