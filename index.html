@@ -10,12 +10,13 @@
     <meta http-equiv="X-Frame-Options" content="DENY"> <!-- Empêche l'incorporation dans des iframes -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff"> <!-- Empêche le MIME-type sniffing -->
     <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self' https: 'unsafe-inline' 'unsafe-eval'; 
-        img-src 'self' https: data:; 
-        media-src 'self' https: blob:;
-        font-src 'self' https: data:; 
+        default-src 'self' https: 'unsafe-inline' 'unsafe-eval';
+        img-src 'self' https: data:;
+        media-src 'self' blob: https:;
+        font-src 'self' https: data:;
         connect-src 'self' https:;
         frame-src 'self' https://clips.twitch.tv https://www.youtube.com;
+        child-src 'self' https://clips.twitch.tv https://www.youtube.com;
     "> <!-- Politique de sécurité du contenu -->
     
     <!-- Protection contre le clickjacking -->
@@ -252,6 +253,7 @@
                     </div>
                     <div class="video-item">
                         <iframe src="https://clips.twitch.tv/embed?clip=CarelessTameBasenji4Head-wFB6GK0K3HUJ7x9A&parent=lpn.byoo.zip" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
 
