@@ -3,33 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Sécurité -->
-    <meta name="robots" content="noindex, nofollow"> <!-- Empêche l'indexation -->
-    <meta name="referrer" content="no-referrer"> <!-- Supprime les informations de référence -->
-    <meta http-equiv="X-Frame-Options" content="DENY"> <!-- Empêche l'incorporation dans des iframes -->
-    <meta http-equiv="X-Content-Type-Options" content="nosniff"> <!-- Empêche le MIME-type sniffing -->
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self' https: 'unsafe-inline' 'unsafe-eval';
-        img-src 'self' https: data:;
-        media-src 'self' blob: https:;
-        font-src 'self' https: data:;
-        connect-src 'self' https:;
-        frame-src 'self' https://clips.twitch.tv https://www.youtube.com;
-        child-src 'self' https://clips.twitch.tv https://www.youtube.com;
-    "> <!-- Politique de sécurité du contenu -->
-    
-    <!-- Protection contre le clickjacking -->
-    <style>
-        html { display: none; }
-    </style>
-    <script>
-        if (self === top) {
-            document.documentElement.style.display = 'block';
-        } else {
-            top.location = self.location;
-        }
-    </script>
 
     <title>Les Pneus Normaux - Entreprise virtuelle TrucksBook</title>
 
