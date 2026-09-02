@@ -33,6 +33,28 @@ document.addEventListener('DOMContentLoaded', () => {
     mainSections[0].parentNode.insertBefore(mainContent, mainSections[0]);
     mainSections.forEach(section => mainContent.appendChild(section));
 
+    // Gestion de la modal de recrutement
+    const recruitmentModal = document.getElementById('recruitmentModal');
+    const recruitmentClose = document.querySelector('.recruitment-close');
+    const recruitmentTriggers = document.querySelectorAll('.recruitment-trigger');
+
+    recruitmentTriggers.forEach(trigger => {
+        trigger.addEventListener('click', (e) => {
+            e.preventDefault();
+            recruitmentModal.style.display = 'flex';
+        });
+    });
+
+    recruitmentClose.addEventListener('click', () => {
+        recruitmentModal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === recruitmentModal) {
+            recruitmentModal.style.display = 'none';
+        }
+    });
+
     // Gestionnaire de navigation modifié
     document.querySelectorAll('nav a').forEach(link => {
         link.addEventListener('click', async (e) => {
