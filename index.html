@@ -23,6 +23,30 @@
             <img src="img/loading.gif" class="loading-logo">
         </div>
     </div>
+    
+    <!-- Modal de recrutement -->
+    <div id="recruitmentModal" class="recruitment-modal">
+        <div class="recruitment-modal-content">
+            <span class="recruitment-close">&times;</span>
+            <div class="recruitment-modal-header">
+                <h2>Nous priorisons les statistiques TrucksBook</h2>
+                <p>Mais si vous avez des problèmes avec ce dernier, soit par souci de compatibilité d'OS ou autre raison, sélectionnez TruckyHub</p>
+            </div>
+            <div class="recruitment-modal-body">
+                <a href="https://trucksbook.eu/company/50627" class="recruitment-option primary" target="_blank">
+                    <i class="fas fa-star"></i>
+                    <span class="option-title">Rejoindre via TrucksBook</span>
+                    <span class="option-subtitle">(Recommandé)</span>
+                </a>
+                <a href="https://truckyhub.com" class="recruitment-option secondary" target="_blank">
+                    <i class="fas fa-link"></i>
+                    <span class="option-title">Rejoindre via TruckyHub</span>
+                    <span class="option-subtitle">(Alternative)</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    
     <!-- Header -->
     <header class="sticky-header">
         <nav>
@@ -48,7 +72,7 @@
         <div class="hero-content">
             <h1>Les Pneus Normaux</h1>
             <h3>La société franco-réunionnaise qui livre d'un point A à un point B !</p>
-            <a href="https://trucksbook.eu/company/50627" class="cta-button" target="_blank">Postulez</a>
+            <button class="cta-button recruitment-trigger">Postulez</button>
         </div>
     </section>
 
@@ -275,7 +299,7 @@
             </div>
             <div class="contract-footer">
                 <p>Selon le choix de votre contrat, merci de le préciser dans le formulaire d'inscription sur TrucksBook.</p>
-                <a href="https://trucksbook.eu/company/50627" class="cta-button" target="_blank">Postuler maintenant</a>
+                <button class="cta-button recruitment-trigger">Postuler maintenant</button>
             </div>
             <a href="#" class="back-button">Retour à l'accueil</a>
         </div>
