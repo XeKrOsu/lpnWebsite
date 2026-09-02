@@ -146,6 +146,8 @@ nav ul a:hover {
     font-weight: bold;
     margin-top: 2rem;
     transition: transform 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
@@ -464,6 +466,140 @@ footer {
     color: white;
     font-size: 2rem;
     cursor: pointer;
+}
+
+/* Recruitment Modal Styles */
+.recruitment-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.recruitment-modal-content {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    position: relative;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.recruitment-close {
+    position: absolute;
+    right: 1.5rem;
+    top: 1.5rem;
+    font-size: 2rem;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.recruitment-close:hover {
+    color: #333;
+}
+
+.recruitment-modal-header {
+    padding: 2.5rem 2rem 1.5rem;
+    border-bottom: 1px solid #e0e0e0;
+    text-align: center;
+}
+
+.recruitment-modal-header h2 {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.recruitment-modal-header p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.recruitment-modal-body {
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.recruitment-option {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.recruitment-option i {
+    font-size: 1.8rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+.recruitment-option.primary {
+    background-color: rgba(9, 255, 224, 0.1);
+    border-color: var(--secondary-color);
+}
+
+.recruitment-option.primary:hover {
+    background-color: rgba(9, 255, 224, 0.2);
+    transform: translateX(5px);
+}
+
+.recruitment-option.primary i {
+    color: var(--secondary-color);
+}
+
+.recruitment-option.secondary {
+    background-color: rgba(0, 62, 54, 0.1);
+    border-color: var(--primary-color);
+}
+
+.recruitment-option.secondary:hover {
+    background-color: rgba(0, 62, 54, 0.15);
+    transform: translateX(5px);
+}
+
+.recruitment-option.secondary i {
+    color: var(--primary-color);
+}
+
+.option-title {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.option-subtitle {
+    display: block;
+    color: #999;
+    font-size: 0.85rem;
 }
 
 /* Contracts Section */
@@ -973,6 +1109,10 @@ footer {
     .social-icons {
         justify-content: center;
     }
+
+    .recruitment-modal-content {
+        margin: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -988,6 +1128,24 @@ footer {
         width: 100%;
         text-align: center;
     }
+
+    .recruitment-modal-header h2 {
+        font-size: 1.4rem;
+    }
+
+    .recruitment-modal-body {
+        padding: 1.5rem;
+    }
+
+    .recruitment-option {
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .recruitment-option i {
+        min-width: auto;
+    }
 }
 
 /* Social Icons */
@@ -996,14 +1154,4 @@ footer {
     gap: 1.5rem;
     padding: 0;
     list-style: none;
-}
-
-.social-icons a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    transition: all 0.3s ease;
-}
-
-.social-icons a:hover {
-    transform: translateY(-3px);
 }
