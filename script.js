@@ -189,17 +189,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Ajuster la hauteur des iframes vidéo
-    function resizeVideoIframes() {
-        const videoItems = document.querySelectorAll('.video-item');
-        videoItems.forEach(item => {
-            const width = item.offsetWidth;
-            item.style.height = `${width * 0.5625}px`; // Ratio 16:9
+    // Twitch exige que parent corresponde au hostname actuel (localhost, lpn.byoo.zip, etc.)
+    function initTwitchEmbeds() {
+        const hosts = new Set(['lpn.byoo.zip']);
+        if (window.location.hostname) {
+            hosts.add(window.location.hostname);
+        }
+
+        const parentQuery = [...hosts]
+            .map(host => `parent=${encodeURIComponent(host)}`)
+            .join('&');
+
+        document.querySelectorAll('iframe[data-twitch-clip]').forEach(iframe => {
+            const clip = iframe.getAttribute('data-twitch-clip');
+            iframe.src = `https://clips.twitch.tv/embed?clip=${encodeURIComponent(clip)}&${parentQuery}`;
         });
     }
 
-    window.addEventListener('resize', resizeVideoIframes);
-    resizeVideoIframes();
+    initTwitchEmbeds();
 
     // Gestion du header transparent
     const header = document.querySelector('.sticky-header');
